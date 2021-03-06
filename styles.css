@@ -1,0 +1,133 @@
+/*TABLE OF CONTENTS
+~~
+html
+header
+container(menu bar)
+a links
+bio -header
+blocks-(main)
+footer
+~~
+*/
+html{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url("bg5.jpg"), linear-gradient(120deg, rgba(182, 26, 26, 0.301) 46%, rgba(17, 17, 17, 0.685) 10%, rgba(70, 18, 18, 0.856) 50%);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-size: 16,5px;
+    font-family: 'Times New Roman', Times, serif, arial;
+}
+header{
+    display: block;
+    height: 100%;
+    /*set to percent instead of vh so that thw header section can span vertically as much
+    as needed without text disappearing*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: url("bg5.jpg"),rgba(104, 96, 96, 0.952);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 16.4px;
+    padding-top: 25px;
+    margin-top: 0px;
+    background: rgba(0, 0, 0, 0.486);
+    height: 90px;
+    justify-content: center;
+}
+.container > div{
+    padding: 15px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.eshop{
+    margin-left: auto;
+}
+.portfolio{
+    margin-right: 10%;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+}
+a:hover{
+    color: rgba(236, 177, 16, 0.952);
+    font-size: 18px;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width:400px;
+    color: white;
+    font-weight: 500;
+    background: rgba(44, 0, 0, 0.767);
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    padding: 10px;
+    padding-block-end: 30px;
+    text-align:center;
+    margin-top: 2%;
+    margin-block-end: 2%;
+    margin-right: 2%;
+
+}
+.blocks{
+    display: flex;
+    flex-direction: column;
+    /*space-between to ensure correct fitting of items in a flexbox*/
+    justify-content: space-between;
+    margin-top: 10%;
+    color: white;
+    align-items: center;
+}
+.blocks > div{
+    color:rgb(2, 2, 2);
+    margin-top: 5px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    color: white;
+}
+h1 h2{
+    color: white;
+}
+.description{
+    padding:60px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+/* make imgs fit all screen sizes-a must to include in code*/
+img {
+    max-width: 100%;
+    display: block;
+}
+.blocks > div:hover{
+    opacity: 0.9;
+    transform: scale(0.99);
+    transition-delay: ease-in 0.1s;
+}
+footer{
+    display: flex;
+    background: url("bg5.jpg"),rgba(54, 52, 52, 0.068);
+    justify-content:center;
+    align-content: flex-end;
+    height: 50px;
+    width: 100vw;
+    padding-top: 20px;
+    color: white;
+}

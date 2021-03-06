@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+       <link href="styles.css" rel="stylesheet" >
+    </head>
+  <body>
+    <header>
+    <div class="container">
+      <div class="eshop"><a href="#eshop">E-shops</a></div>
+      <div class="portfolio"><a href="#website">Websites</a></div>
+    </div>
+    
+    <div class="bio">
+      <h1>Λίγα Λόγια Για Μένα</h1>
+      <p> Γειά σας! Είμαι η Αργυρώ ,ενα άτομο πρόθυμο να μαθαίνει και να 
+       εξελίσσεται δείχνοντας ιδιαίτερη επιμονή στους στόχους και την επίλυση προβλημάτων 
+       με προσπάθεια για έμφαση στην ευελιξία της σκέψης! Ανάμεσα στην πληθώρα των ενδιαφερόντων μου 
+       ξεχωρίζει το web development. Μου κινεί ιδιαίτερα το ενδιαφέρον η διαδικασία του να αποκτήσει μια καλή 
+       εμπειρία ο χρήστης κι ο πελάτης. <br>Ιδανικά θα ήθελα να εργαστώ στο αντικείμενο της κατασκευής
+       ιστοσελίδων και e-shops. Οσον αφορά στα παραπάνω έχω αποκτήσει (και συνεχίζω να αποκτώ) βασικές γνώσεις ακολουθώντας
+       το μονοπάτι της αυτοδιδαχής. Έχω έρθει σε επαφή με shopify platform και Wordpress cms ενω προσπαθώ να κάνω
+        κατασκεύες κι να πειραματίζομαι απο το μηδεν γράφωντας σε text editor. <br>Παρακάτω θα βρείτε
+        μερικές ιδέες για projects που δημιούργησα. </p></div>
+    </header>
+    <div class="blocks">
+      <h1>Μερικά Δικα Μου Project</h1>
+        <div class="project1" id="eshop"><a href="woo_thegif.gif"><img src="woo_thegif.gif" alt="woocommerce"></div>
+          <div class="description" ><h2>E-shop Wordpress</h2></a>
+          <p>Ηλεκτρονικό κατάστημα κατασκευασμένο στο Wordpress με<br> Woo Commerce & Astra theme</p></div>
+        <div class="project2"><a href="gifshopify.gif"><img src="gifshopify.gif" alt="Shopify"></div>
+          <div class="description"><h2>E-shop Shopify</h2></a>
+          <p>Ηλεκτρονικό κατάστημα κατασκευασμένο με shopify</p></div>
+        <div class="project3"><a href="cityview.gif"><img src="cityview.gif" alt="cityview"></div>
+          <div class="description" id="website"><h2>  Ιστοσελίδα</h2></a>
+        <p>Κατασκευή ιστοσελίδας με Wordpress και elementor.<br>Ιδέα για τουριστικό οδηγό.</p></div>
+        <div class="project4"><a href="moto-site.gif"><img src="moto-site.gif" alt="moto-site"></div>
+          <div class="description" id="jump"><h2>  Ιστοσελίδα</h2></a>
+        <p>Κατασκευή ιστοσελίδας με Wordpress.Ιδέα για blog,ενημέρωση/διαφημιση προιόντων. </p></div>
+        <div class="project5"><a href="port.gif"><img src="port.gif" alt="portfolio"></div>
+          <div class="description"><h2>  Ιστοσελίδα My portfolio</h2></a>
+        <p>Κατασκευή ιστοσελίδας from scratch , vanilla CSS, fully responsive. </p></div>
+        <div class="project6"><a href="hike.gif"><img src="hike.gif" alt="portfolio"></div>
+          <div class="description"><h2>  Homepage</h2></a>
+        <p>Δεγμα homepage΄με fullscreen image background  , vanilla CSS. </p></div>
+    </div>
+  <footer>
+    Design and copyright Argiro Liosi
+  </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow9.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+    <noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+    
+  </body>
+  </html>
