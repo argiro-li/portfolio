@@ -28,6 +28,7 @@ header{
     height: 100%;
     /*set to percent instead of vh so that thw header section can span vertically as much
     as needed without text disappearing*/
+    width: 100vw;
     overflow: hidden;
     margin: 0;
     padding: 0;
